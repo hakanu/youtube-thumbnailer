@@ -7,7 +7,33 @@
 <body>
   <h1>YouTube Video Thumbnail Generator</h1>
 
-  <script type="text/javascript" src="static/js/jquery-2.13.min.js"></script>
+  <div>
+    <label>YouTube link:</label>
+    <input type="text" ng-model="ytLink" placeholder="Enter the YouTube video link here">
+    <hr>
+    <h1>Thumnail: {{ytLink}}!</h1>
+
+    <p>Default thumb</p>
+    <img src="http://img.youtube.com/vi/{{ytLink}}/0.jpg" />
+
+    <p>Full size thumb</p>
+    <img src="http://img.youtube.com/vi/{{ytLink}}/default.jpg" />
+
+    <p>Medium default</p>
+    <img src="http://img.youtube.com/vi/{{ytLink}}/mqdefault.jpg" />
+
+    <p>Small thumb</p>
+    <img src="http://img.youtube.com/vi/{{ytLink}}/1.jpg" />
+
+    <p>Small thumb</p>
+    <img src="http://img.youtube.com/vi/{{ytLink}}/2.jpg" />
+
+    <p>Small thumb</p>
+    <img src="http://img.youtube.com/vi/{{ytLink}}/3.jpg" />
+
+  </div>
+
+  <script type="text/javascript" src="static/js/jquery-2.1.3.min.js"></script>
   <script type="text/javascript" src="static/js/angular.min.js"></script>
 </body>
 </html>
