@@ -11,58 +11,84 @@
 </head>
 
 <body>
-  <h1>YouTube Video Thumbnail Generator</h1>
 
-  <div>
-    <label>YouTube link:</label>
-    <br />
-    <input type="text" ng-model="ytLink" placeholder="Enter the YouTube video link here">
-    
-    <hr />
+  <div id="main">
 
-    <div>
-      <h3>Default thumbnail</h3>
-      <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/0.jpg" />
-      <br />
-      <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/0.jpg</sup>
+    <div class="header">
+      <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+          <a class="pure-menu-heading" href="/">VidImg</a>
+
+          <ul>
+              <li class="pure-menu-selected"><a href="/">Home</a></li>
+              <li><a href="http://haku.io">About</a></li>
+              <li><a href="http://haku.io">Other Projects</a></li>
+              <li><a href="http://haku.io">Contact</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <div class="splash-container">
+      <div class="splash">
+          <h1 class="splash-head">YouTube Video Thumbnail Generator</h1>
+          <p class="splash-subhead">
+            Easy video thumbnails.
+          </p>
+      </div>
     </div>
 
     <div>
-      <h3>Full size thumbnail</h3>
-      <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/default.jpg" />
+      <label>YouTube link:</label>
       <br />
-      <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/default.jpg</sup>
-    </div>
+      <input type="text" ng-model="ytLink" placeholder="Enter the YouTube video link here">
+      
+      <hr />
 
-    <div>
-      <h3>Medium default thumbnail</h3>
-      <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/mqdefault.jpg" />
-      <br />
-      <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/mqdefault.jpg</sup>
-    </div>
+      <div>
+        <h3>Default thumbnail</h3>
+        <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/0.jpg" />
+        <br />
+        <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/0.jpg</sup>
+      </div>
 
-    <div>
-      <h3>Small thumbnail</h3>
-      <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/1.jpg" />
-      <br />
-      <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/1.jpg</sup>
-    </div>
+      <div>
+        <h3>Full size thumbnail</h3>
+        <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/default.jpg" />
+        <br />
+        <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/default.jpg</sup>
+      </div>
 
-    <div>
-      <h3>Small thumbnail</h3>
-      <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/1.jpg" />
-      <br />
-      <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/1.jpg</sup>
-    </div>
+      <div>
+        <h3>Medium default thumbnail</h3>
+        <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/mqdefault.jpg" />
+        <br />
+        <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/mqdefault.jpg</sup>
+      </div>
 
-    <div>
-      <h3>Small thumbnail</h3>
-      <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/3.jpg" />
-      <br />
-      <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/3.jpg</sup>
-    </div>
+      <div>
+        <h3>Small thumbnail</h3>
+        <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/1.jpg" />
+        <br />
+        <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/1.jpg</sup>
+      </div>
 
-  </div>
+      <div>
+        <h3>Small thumbnail</h3>
+        <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/1.jpg" />
+        <br />
+        <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/1.jpg</sup>
+      </div>
+
+      <div>
+        <h3>Small thumbnail</h3>
+        <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/3.jpg" />
+        <br />
+        <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/3.jpg</sup>
+      </div>
+
+    </div>
+  </div> <!-- /main -->
 
   <script type="text/javascript" src="static/js/jquery-2.1.3.min.js"></script>
   <script>
