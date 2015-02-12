@@ -5,6 +5,7 @@ angular.module('yt', []).filter('truncate', function() {
       var startIndex = input.indexOf("v=") + 2;
       return input.substring(startIndex, input.length);
     }
-    return input ? 'hop' : 'nop';
+    // Miranda: https://www.youtube.com/watch?v=svOElhHUb38
+    return input ? 'hop' : 'svOElhHUb38';
   };
 });

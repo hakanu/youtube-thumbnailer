@@ -3,6 +3,7 @@
 
 <head>
   <title>YouTube video thumbnail generator</title>
+  <link rel="shortcut icon" href="static/img/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="static/css/pure-min.css">
   <link rel="stylesheet" type="text/css" href="static/css/styles.css">
   <script type="text/javascript" src="static/js/angular.min.js"></script>
@@ -14,26 +15,52 @@
 
   <div>
     <label>YouTube link:</label>
+    <br />
     <input type="text" ng-model="ytLink" placeholder="Enter the YouTube video link here">
-    <hr>
+    
+    <hr />
 
-    <p>Default thumb</p>
-    <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/0.jpg" />
+    <div>
+      <h3>Default thumbnail</h3>
+      <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/0.jpg" />
+      <br />
+      <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/0.jpg</sup>
+    </div>
 
-    <p>Full size thumb</p>
-    <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/default.jpg" />
+    <div>
+      <h3>Full size thumbnail</h3>
+      <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/default.jpg" />
+      <br />
+      <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/default.jpg</sup>
+    </div>
 
-    <p>Medium default</p>
-    <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/mqdefault.jpg" />
+    <div>
+      <h3>Medium default thumbnail</h3>
+      <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/mqdefault.jpg" />
+      <br />
+      <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/mqdefault.jpg</sup>
+    </div>
 
-    <p>Small thumb</p>
-    <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/1.jpg" />
+    <div>
+      <h3>Small thumbnail</h3>
+      <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/1.jpg" />
+      <br />
+      <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/1.jpg</sup>
+    </div>
 
-    <p>Small thumb</p>
-    <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/2.jpg" />
+    <div>
+      <h3>Small thumbnail</h3>
+      <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/1.jpg" />
+      <br />
+      <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/1.jpg</sup>
+    </div>
 
-    <p>Small thumb</p>
-    <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/3.jpg" />
+    <div>
+      <h3>Small thumbnail</h3>
+      <img src="http://img.youtube.com/vi/{{ytLink|truncate}}/3.jpg" />
+      <br />
+      <sup>http://img.youtube.com/vi/{{ytLink|truncate}}/3.jpg</sup>
+    </div>
 
   </div>
 
