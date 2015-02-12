@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+#input-yt-link {
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: rgb(221, 221, 221) 0px 1px 3px 0px inset;
+  -webkit-box-shadow: rgb(221, 221, 221) 0px 1px 3px 0px inset;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
