@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="yt">
 
 <head>
   <title>YouTube video thumbnail generator</title>
@@ -15,10 +15,9 @@
     <label>YouTube link:</label>
     <input type="text" ng-model="ytLink" placeholder="Enter the YouTube video link here">
     <hr>
-    <h1>Thumnail: {{ytLink}}!</h1>
 
     <p>Default thumb</p>
-    <img src="http://img.youtube.com/vi/{{ytLink}}/0.jpg" />
+    <img src="http://img.youtube.com/vi/{{ytLink|substring:32}}/0.jpg" />
 
     <p>Full size thumb</p>
     <img src="http://img.youtube.com/vi/{{ytLink}}/default.jpg" />
