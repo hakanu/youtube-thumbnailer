@@ -2,12 +2,20 @@
 <html ng-app="yt">
 
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>YouTube video thumbnail generator</title>
   <link rel="shortcut icon" href="static/img/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="static/css/pure-min.css">
   <link rel="stylesheet" type="text/css" href="static/css/styles.css">
   <script type="text/javascript" src="static/js/angular.min.js"></script>
   <script type="text/javascript" src="static/js/angular-filters.js"></script>
+  
+  <!-- Alexa verification code -->
+  <meta name="alexaVerifyID" content="bX2QIbZ7-GrbH1ywGeoB9EoD1UM"/>
+  <!-- Bing webmaster tools-->
+  <meta name="msvalidate.01" content="C317DA76EB5C2FFCE043F9A5C534F058" />
+  <!-- Bing webmaster tools-->
+  <meta name="yandex-verification" content="6fedfd6bd4c50dcb" />
 </head>
 
 <body>
@@ -47,11 +55,11 @@
       <script>
       (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-    
+
     <div>
-      <label>Enter YouTube video link (eg https://www.youtube.com/watch?v=svOElhHUb38):</label>
-      <br />
-      <input type="text" ng-model="ytLink" placeholder="Enter the YouTube video link here">
+      <label class="pure-form">Enter YouTube video link <i>(eg https://www.youtube.com/watch?v=svOElhHUb38):</i></label>
+      <br /><br />
+      <input type="text" ng-model="ytLink" class="pure-form" placeholder="Enter the YouTube video link here" size="30">
       
       <hr />
 
